@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
+
+    <ImageView
+        android:layout_width="700dp"
+        android:layout_height="240dp"
+        android:id="@+id/iv_menudisplay1"
+        android:onClick="OnImage"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_menuname1"
+        android:layout_below="@id/iv_menudisplay1"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_rate1"
+        android:text="Rate :-"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/iv_menudisplay1"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ratevalue1"
+        android:text="50/-"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@id/iv_menudisplay1"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/tv_rate1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_quantity1"
+        android:text="Quantity :-"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@id/tv_rate1"
+        android:layout_marginTop="75dp"
+        />
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:id="@+id/numberPicker1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_ratevalue1"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_payment1"
+        android:text="Place Order"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_orange_dark"
+        />
+</RelativeLayout>

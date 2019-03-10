@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/iv_menudisplay"
+        android:onClick="OnImage"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_menuname"
+        android:layout_below="@id/iv_menudisplay"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_rate"
+        android:text="Rate :-"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/iv_menudisplay"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ratevalue"
+        android:text="50/-"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@id/iv_menudisplay"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/tv_rate"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_preference"
+        android:text="Preference :-"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@id/tv_rate"
+        android:layout_marginTop="10dp"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_preference"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tv_preference"
+        android:layout_marginTop="10dp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_preference_veg"
+            android:text="Veg"
+            android:textSize="15sp"
+            ></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_preference_non_veg"
+            android:text="Non-Veg"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            ></RadioButton>
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_quantity"
+        android:text="Quantity :-"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@id/rg_preference"
+        android:layout_marginTop="75dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_payment"
+        android:text="Place Order"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_orange_dark"
+        />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:id="@+id/numberPicker"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rg_preference"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>
